@@ -25,14 +25,14 @@ resource "aws_network_acl" "cmcloudlab_public_nacl" {
     from_port  = 80
     to_port    = 80
   }
-  ingress {
-    rule_no    = 120
-    action     = "allow"
-    protocol   = "tcp"
-    cidr_block = var.internet
-    from_port  = 443
-    to_port    = 443
-  }
+  # ingress {
+  #   rule_no    = 120
+  #   action     = "allow"
+  #   protocol   = "tcp"
+  #   cidr_block = var.internet
+  #   from_port  = 443
+  #   to_port    = 443
+  # }
   ingress {
     rule_no    = 300
     protocol   = "tcp"
@@ -83,14 +83,14 @@ resource "aws_network_acl" "cmcloudlab_private_nacl" {
     from_port  = 80
     to_port    = 80
   }
-  ingress {
-    rule_no    = 120
-    action     = "allow"
-    protocol   = "tcp"
-    cidr_block = var.internet
-    from_port  = 443
-    to_port    = 443
-  }
+  # ingress {
+  #   rule_no    = 120
+  #   action     = "allow"
+  #   protocol   = "tcp"
+  #   cidr_block = var.internet
+  #   from_port  = 443
+  #   to_port    = 443
+  # }
   ingress {
     rule_no    = 300
     protocol   = "tcp"

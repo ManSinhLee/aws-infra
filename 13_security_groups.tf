@@ -9,14 +9,14 @@ resource "aws_security_group" "alb_sg" {
     ipv6_cidr_blocks = [var.internet_v6]
     description      = "allow HTTP traffic from internet"
   }
-  ingress {
-    from_port        = 443
-    to_port          = 443
-    protocol         = "tcp"
-    cidr_blocks      = [var.internet]
-    ipv6_cidr_blocks = [var.internet_v6]
-    description      = "allow HTTPs traffic from internet"
-  }
+  # ingress {
+  #   from_port        = 443
+  #   to_port          = 443
+  #   protocol         = "tcp"
+  #   cidr_blocks      = [var.internet]
+  #   ipv6_cidr_blocks = [var.internet_v6]
+  #   description      = "allow HTTPs traffic from internet"
+  # }
 
   egress {
     from_port        = 0
@@ -47,14 +47,14 @@ resource "aws_security_group" "public_sg" {
     ipv6_cidr_blocks = [var.internet_v6]
     description      = "allow HTTP traffic from internet"
   }
-  ingress {
-    from_port        = 443
-    to_port          = 443
-    protocol         = "tcp"
-    cidr_blocks      = [var.internet]
-    ipv6_cidr_blocks = [var.internet_v6]
-    description      = "allow HTTPs traffic from internet"
-  }
+  # ingress {
+  #   from_port        = 443
+  #   to_port          = 443
+  #   protocol         = "tcp"
+  #   cidr_blocks      = [var.internet]
+  #   ipv6_cidr_blocks = [var.internet_v6]
+  #   description      = "allow HTTPs traffic from internet"
+  # }
 
   egress {
     from_port        = 0
@@ -85,14 +85,14 @@ resource "aws_security_group" "private_sg" {
     ipv6_cidr_blocks = [var.internet_v6]
     description      = "allow HTTP traffic from internet"
   }
-  ingress {
-    from_port        = 443
-    to_port          = 443
-    protocol         = "tcp"
-    cidr_blocks      = [var.internet]
-    ipv6_cidr_blocks = [var.internet_v6]
-    description      = "allow HTTPs traffic from internet"
-  }
+  # ingress {
+  #   from_port        = 443
+  #   to_port          = 443
+  #   protocol         = "tcp"
+  #   cidr_blocks      = [var.internet]
+  #   ipv6_cidr_blocks = [var.internet_v6]
+  #   description      = "allow HTTPs traffic from internet"
+  # }
 
   egress {
     from_port        = 0
