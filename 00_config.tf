@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = "state.cmcloudlab444.info"
+    bucket = "state.cmcloudlab605.info"
     key    = "terraform.state"
     region = "us-east-1"
   }
