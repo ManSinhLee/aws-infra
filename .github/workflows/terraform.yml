@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  deploy:
+  deploy_aws_infra:
     runs-on: ubuntu-latest
 
     steps:

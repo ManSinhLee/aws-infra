@@ -5,7 +5,7 @@ variable "instance_type" {
 
 variable "domain_name" {
   type    = string
-  default = "cmcloudlab444.info"
+  default = "cmcloudlab605.info"
 }
 
 variable "region" {
@@ -15,12 +15,12 @@ variable "region" {
 
 variable "my_address" {
   type    = string
-  default = "116.99.209.79/32"
+  default = "116.103.152.234/32"
 }
 
 variable "office_address" {
   type    = string
-  default = "116.99.209.79/32"
+  default = "116.103.152.234/32"
 }
 
 variable "internet" {
